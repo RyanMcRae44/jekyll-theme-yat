@@ -32,3 +32,10 @@ jobs:
           jekyll_baseurl: '/jekyll-theme-yat'  # Default is empty
           cname: ''                  # Default is to not use a cname
           actor: ''                  # Default is the GITHUB_ACTOR
+- uses: actions/checkout@v2
+  with:
+    node-version: '20'
+
+- uses: actions/cache@v1
+  with:
+    node-version: '20'
